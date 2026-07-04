@@ -1,0 +1,10 @@
+name = input("Enter your name : ")
+age = int(input("Enter you age : "))
+study = input("Enter your school/college name :")
+marks = float(input("Enter your percentage/CGPA : "))
+
+print("------Student Details------")
+print("Name : ",name)
+print("Age : ",age)
+print("School/College : ",study)
+print("CGPA/Percentage : ",marks)
