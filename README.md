@@ -45,7 +45,7 @@ Question I Still Have
 
 If Python is dynamically typed and determines data types at runtime, how does it manage memory efficiently while maintaining good performance compared to statically typed languages like Java?
 
-# Day 2 - Python Collections (Part 1)
+# Day 2 - Python Collections 
 
 ## Date
 22 June 2026
@@ -171,3 +171,256 @@ Solved problems involving:
 
 How does Python internally implement shallow copy and deep copy, and why are nested mutable objects shared in a shallow copy?
 
+# Day 3 - Python Collections 
+
+---
+
+# Topics Covered
+
+- Revision of Strings, Lists and Tuples
+- Tuple Packing
+- Tuple Unpacking
+- Ignoring Values using `_`
+- Swapping Variables
+- Sets
+- Set Operations
+  - add()
+  - remove()
+  - discard()
+  - Union
+  - Intersection
+  - Difference
+- Dictionaries
+- Dictionary Operations
+  - get()
+  - keys()
+  - values()
+  - items()
+  - pop()
+  - Updating Values
+  - Adding New Key-Value Pairs
+
+---
+
+# What I Learned
+
+Today I completed Python's collection data structures by learning Sets and Dictionaries.
+
+I understood that a Set is designed to store unique values and performs fast searching using hashing. Unlike Lists, Sets do not preserve order and do not support indexing. I also learned common set operations such as Union, Intersection and Difference, which are useful in solving real-world problems involving unique data.
+
+I learned that Dictionaries store information as key-value pairs, making them much more suitable than parallel lists for representing related data. Dictionary lookups are efficient because Python uses hashing internally. I also learned how to add, update, delete and retrieve values safely using dictionary methods.
+
+---
+
+# Why It Works
+
+Python provides multiple collection types because each solves a different problem efficiently.
+
+- Lists represent ordered collections.
+- Tuples represent fixed collections.
+- Sets represent unique collections with fast searching.
+- Dictionaries represent mappings between keys and values.
+
+Instead of creating one complex data structure that does everything, Python provides specialized collections optimized for different use cases.
+
+---
+
+# Comparison with Java
+
+| Java | Python |
+|------|--------|
+| HashSet | Set |
+| HashMap | Dictionary |
+| ArrayList | List |
+| Immutable String | Immutable String |
+| Temporary variable needed for swapping | Tuple unpacking (`a, b = b, a`) |
+---
+
+# Interesting Observations
+
+- A Set automatically removes duplicate values.
+- Membership checking in Sets is faster than Lists because of hashing.
+- Dictionaries check only Keys when using the `in` operator.
+- Dictionary Keys must be immutable.
+- Lists, Tuples, Sets and Dictionaries all solve different real-world problems.
+
+---
+
+# Interview Questions
+
+### Why are Sets faster than Lists for searching?
+
+Sets use hashing, allowing Python to locate elements efficiently without checking each element one by one.
+
+---
+
+### Why can't Lists be Dictionary Keys?
+
+Lists are mutable. If a key changes after insertion, Python would no longer be able to locate it correctly. Dictionary keys must remain immutable.
+
+---
+
+### Difference between `remove()` and `discard()` in Sets?
+
+- `remove()` raises a `KeyError` if the element is absent.
+- `discard()` silently does nothing if the element does not exist.
+
+---
+
+### Difference between Lists and Dictionaries?
+
+Lists store ordered elements accessed using numeric indexes.
+
+Dictionaries store key-value mappings accessed using keys.
+
+---
+
+# Mini Challenges Completed
+
+✔ Tuple unpacking
+
+✔ Variable swapping
+
+✔ Set operations
+
+✔ Dictionary creation
+
+✔ Dictionary update
+
+✔ Dictionary deletion
+
+✔ Dictionary traversal methods
+
+✔ Predicted outputs without executing code
+
+---
+
+# Today's Challenge
+
+Solved reasoning questions involving:
+
+- Hashing
+- Dictionary design
+- Object references
+- Collection selection
+- Memory behavior
+
+---
+
+# Question I Still Have
+
+How does Python internally implement Hash Tables for Sets and Dictionaries, and how are hash collisions handled efficiently?
+
+---
+# Day 4 - Loops
+---
+
+# Topics Covered
+
+- for Loop
+- while Loop
+- range()
+- Iterating through Strings
+- Iterating through Lists
+- Iterating through Dictionaries
+- Tuple Unpacking inside Loops
+- break
+- continue
+- pass
+- Loop else
+- Nested Loops (Introduction)
+
+---
+
+# What I Learned
+
+Today I learned how loops eliminate repetitive code by automating repeated execution.
+
+I understood that Python's `for` loop is used when iterating over a sequence or when the number of iterations is known. The `while` loop is used when execution depends on a condition and the number of iterations is unknown.
+
+I also learned how `break`, `continue`, and `pass` behave differently and where each should be used.
+
+Finally, I learned that dictionaries can be traversed using `items()`, where Python automatically performs tuple unpacking.
+
+---
+
+# Why It Works
+
+Loops allow the CPU to execute the same block of code multiple times without duplicating code.
+
+Python's `range()` object generates values lazily instead of storing millions of integers in memory, making loops memory efficient.
+
+The language follows a consistent "end exclusive" rule across slicing and `range()`, reducing off-by-one errors.
+
+---
+
+# Comparison with Java
+
+| Java | Python |
+|------|--------|
+| `for(int i=0;i<n;i++)` | `for i in range(n)` |
+| Enhanced for-loop | Direct iteration (`for item in list`) |
+| while loop | while loop |
+| break | break |
+| continue | continue |
+| No equivalent of loop-else | loop-else |
+
+---
+# Interesting Observations
+
+- `range()` is memory efficient because it generates values lazily.
+- Loop variables remain accessible after a loop finishes.
+- Python automatically performs tuple unpacking when iterating over `dictionary.items()`.
+- Every collection learned so far becomes significantly more useful when combined with loops.
+
+---
+
+# Interview Questions
+
+### Difference between `break`, `continue` and `pass`
+
+- `break` exits the loop completely.
+- `continue` skips only the current iteration.
+- `pass` performs no operation and acts as a placeholder.
+
+---
+
+### Why is `range()` end-exclusive?
+
+To maintain consistency with Python's indexing and slicing model while avoiding common off-by-one errors.
+
+---
+
+### When should we use `for` and `while`?
+
+Use `for` when the number of iterations or iterable is known.
+
+Use `while` when repetition depends on a condition that is evaluated during execution.
+
+---
+
+# Mini Challenges Completed
+
+✔ for Loop
+
+✔ while Loop
+
+✔ range()
+
+✔ Dictionary Iteration
+
+✔ break
+
+✔ continue
+
+✔ pass
+
+✔ Output Prediction
+
+---
+
+# Question I Still Have
+
+How does Python internally generate values lazily inside `range()` without storing all numbers in memory?
+
+---
