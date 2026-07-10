@@ -41,10 +41,6 @@ What I Found Interesting
 
 Although Python's syntax is much shorter than Java's, I noticed that the underlying programming concepts remain the same. My Java knowledge isn't wasted; instead, it gives me a strong foundation for understanding Python more quickly. I'm not learning programming from scratch—I'm learning a new language and a new ecosystem.
 
-Question I Still Have
-
-If Python is dynamically typed and determines data types at runtime, how does it manage memory efficiently while maintaining good performance compared to statically typed languages like Java?
-
 # Day 2 - Python Collections 
 
 ## Date
@@ -166,10 +162,6 @@ Solved problems involving:
 - Predicting program output without executing the code
 
 ---
-
-# Question I Still Have
-
-How does Python internally implement shallow copy and deep copy, and why are nested mutable objects shared in a shallow copy?
 
 # Day 3 - Python Collections 
 
@@ -307,9 +299,6 @@ Solved reasoning questions involving:
 
 ---
 
-# Question I Still Have
-
-How does Python internally implement Hash Tables for Sets and Dictionaries, and how are hash collisions handled efficiently?
 
 ---
 # Day 4 - Loops
@@ -418,9 +407,128 @@ Use `while` when repetition depends on a condition that is evaluated during exec
 ✔ Output Prediction
 
 ---
+# Day 5 - Functions
 
-# Question I Still Have
 
-How does Python internally generate values lazily inside `range()` without storing all numbers in memory?
+# Topics Covered
+
+- Function Definition
+- Function Calling
+- Parameters
+- Arguments
+- Local Variables
+- Function Execution Flow
+- return Statement
+- Difference between print() and return
+- Returning Multiple Values
+- Default Parameters
+- Keyword Arguments
+- Variable Length Arguments (*args)
+
+---
+
+# What I Learned
+
+Today I learned that functions are reusable blocks of code designed to perform a specific task.
+
+I understood that parameters act as placeholders while arguments are the actual values supplied during a function call.
+
+The most important concept I learned today was the difference between `print()` and `return()`. Printing only displays information to the user, whereas `return` sends the computed value back to the caller, allowing other parts of the program to reuse it.
+
+I also learned that Python supports default parameter values, keyword arguments, and variable-length arguments (`*args`), making functions flexible and reusable.
+
+---
+
+# Key Concepts
+
+## Parameters vs Arguments
+
+- Parameters are variables defined in the function.
+- Arguments are actual values passed during the function call.
+
+---
+
+## print() vs return()
+
+- `print()` displays output.
+- `return` gives the computed value back to the caller.
+
+---
+
+## Default Parameters
+
+Default values are used when the caller doesn't provide an argument.
+
+---
+
+## Keyword Arguments
+
+Arguments can be matched by parameter name instead of position.
+
+---
+
+## *args
+
+`*args` collects multiple positional arguments into a tuple.
+
+---
+
+# Comparison with Java
+
+| Java | Python |
+|------|--------|
+| Method | Function |
+| Method Parameters | Parameters |
+| Method Arguments | Arguments |
+| return | return |
+| Varargs (`int...`) | *args |
+
+---
+
+# Interview Questions Covered
+
+- Parameter vs Argument
+- print() vs return()
+- Why return is important
+- Default Parameters
+- Keyword Arguments
+- *args
+- Function Execution Flow
+
+---
+
+# Mini Challenges Completed
+
+✔ Function Creation
+
+✔ Parameters
+
+✔ Return Values
+
+✔ Default Parameters
+
+✔ Keyword Arguments
+
+✔ Variable Length Arguments
+
+✔ Nested Function Calls
+
+---
+
+# Project Readiness
+
+Python Fundamentals Completed So Far:
+
+- Variables
+- Data Types
+- Strings
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+- Loops
+- Functions
+
+The next learning session begins with the Contact Book project, where these concepts will be combined into a real application.
 
 ---
