@@ -532,3 +532,106 @@ Python Fundamentals Completed So Far:
 The next learning session begins with the Contact Book project, where these concepts will be combined into a real application.
 
 ---
+
+# Day 6 - Contact Book Project (Version 1.0)
+
+## Date
+27 June 2026
+
+---
+
+# Objective
+
+Build the first complete software application using Python fundamentals.
+
+---
+
+# Project
+
+## Contact Book v1.0
+
+A menu-driven console application capable of managing contacts using Python dictionaries.
+
+---
+
+# Features Implemented
+
+- Add Contact
+- Search Contact
+- Update Contact
+- Delete Contact
+- Display Contacts
+- Exit Application
+
+---
+
+# Data Structure
+
+Dictionary
+
+```python
+contacts = {
+    "9876543210": "Rajeev"
+}
+```
+
+Reason:
+- Phone numbers are unique.
+- Dictionary provides efficient lookup.
+- CRUD operations become simple.
+
+---
+
+# Python Concepts Applied
+
+- Functions
+- Dictionaries
+- Loops
+- Conditional Statements
+- CRUD Operations
+- Dictionary Methods
+    - pop()
+    - items()
+- f-strings
+- return
+- Menu-driven Programming
+
+---
+
+# Software Engineering Concepts Learned
+
+- Requirement Analysis
+- Data Structure Selection
+- Function Decomposition
+- User Experience
+- Modular Programming
+- Design Before Coding
+- Thinking in Features instead of Programs
+
+---
+
+# Challenges Faced
+
+- Choosing the correct dictionary key.
+- Handling duplicate names.
+- Understanding search complexity.
+- Designing user-friendly outputs.
+
+---
+
+# Future Improvements
+
+- Phone Number Validation
+- Duplicate Phone Number Detection
+- File Storage
+- Nested Dictionaries
+- Object-Oriented Design
+
+---
+
+# Outcome
+
+Successfully developed the first complete Python CRUD application.
+
+---
+
